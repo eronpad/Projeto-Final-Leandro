@@ -25,14 +25,14 @@ namespace Projeto_Final_Leandro
             edit_mode_on();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void img_exit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btn_cadastro_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
