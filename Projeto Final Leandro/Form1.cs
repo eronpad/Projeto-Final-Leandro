@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,16 @@ namespace Projeto_Final_Leandro
         public Form1()
         {
             InitializeComponent();
+        }
+        private void edit_mode_on()
+        {
+            txt_nome.ReadOnly = false;
+            num_altura.ReadOnly = false;
+            txt_nome.Focus();
+        }
+        private void picbox_edit_Click(object sender, EventArgs e)
+        {
+            edit_mode_on();
         }
     }
 }
