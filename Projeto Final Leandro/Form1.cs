@@ -32,7 +32,9 @@ namespace Projeto_Final_Leandro
 
         private void btn_cadastro_Click(object sender, EventArgs e)
         {
-
+            Form2 novoForm = new Form2();
+            novoForm.Show();
+            Hide();
         }
     }
 }

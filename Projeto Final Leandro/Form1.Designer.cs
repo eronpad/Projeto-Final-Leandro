@@ -123,11 +123,11 @@
             this.btn_cadastro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_cadastro.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.btn_cadastro.Location = new System.Drawing.Point(231, 296);
+            this.btn_cadastro.Location = new System.Drawing.Point(169, 307);
             this.btn_cadastro.Name = "btn_cadastro";
-            this.btn_cadastro.Size = new System.Drawing.Size(180, 45);
+            this.btn_cadastro.Size = new System.Drawing.Size(295, 45);
             this.btn_cadastro.TabIndex = 7;
-            this.btn_cadastro.Text = "Cadastrar";
+            this.btn_cadastro.Text = "Fazer Login como Professor";
             this.btn_cadastro.Click += new System.EventHandler(this.btn_cadastro_Click);
             // 
             // Form1
