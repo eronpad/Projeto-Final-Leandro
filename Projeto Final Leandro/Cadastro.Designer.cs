@@ -55,7 +55,7 @@
             // 
             // guna2BorderlessForm1
             // 
-            this.guna2BorderlessForm1.BorderRadius = 10;
+            this.guna2BorderlessForm1.BorderRadius = 15;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -157,7 +157,7 @@
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(773, 261);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(295, 176);
             this.guna2GroupBox1.TabIndex = 5;
@@ -173,7 +173,7 @@
             this.btn_outro.CheckedState.InnerOffset = -4;
             this.btn_outro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
             this.btn_outro.Location = new System.Drawing.Point(32, 114);
-            this.btn_outro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_outro.Margin = new System.Windows.Forms.Padding(4);
             this.btn_outro.Name = "btn_outro";
             this.btn_outro.Size = new System.Drawing.Size(102, 36);
             this.btn_outro.TabIndex = 2;
@@ -193,7 +193,7 @@
             this.btn_fem.CheckedState.InnerOffset = -4;
             this.btn_fem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
             this.btn_fem.Location = new System.Drawing.Point(32, 84);
-            this.btn_fem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_fem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_fem.Name = "btn_fem";
             this.btn_fem.Size = new System.Drawing.Size(141, 36);
             this.btn_fem.TabIndex = 1;
@@ -213,7 +213,7 @@
             this.btn_mas.CheckedState.InnerOffset = -4;
             this.btn_mas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
             this.btn_mas.Location = new System.Drawing.Point(32, 53);
-            this.btn_mas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_mas.Margin = new System.Windows.Forms.Padding(4);
             this.btn_mas.Name = "btn_mas";
             this.btn_mas.Size = new System.Drawing.Size(153, 36);
             this.btn_mas.TabIndex = 0;
@@ -291,7 +291,7 @@
             this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
             this.img_exit.ImageRotate = 0F;
             this.img_exit.Location = new System.Drawing.Point(1017, 15);
-            this.img_exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.img_exit.Margin = new System.Windows.Forms.Padding(4);
             this.img_exit.Name = "img_exit";
             this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.img_exit.Size = new System.Drawing.Size(33, 31);
@@ -309,7 +309,7 @@
             this.btn_cadastrar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
             this.btn_cadastrar.Location = new System.Drawing.Point(507, 356);
-            this.btn_cadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(251, 55);
             this.btn_cadastrar.TabIndex = 13;
@@ -321,7 +321,7 @@
             this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-3, 123);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(495, 282);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -346,7 +346,7 @@
             "Resistência",
             "Saúde"});
             this.guna2ComboBox1.Location = new System.Drawing.Point(496, 295);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(265, 36);
             this.guna2ComboBox1.TabIndex = 15;
@@ -386,7 +386,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.btn_limpar);
             this.Controls.Add(this.lbl_imc);
             this.Controls.Add(this.guna2ComboBox1);
@@ -404,8 +404,9 @@
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.txt_name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.Load += new System.EventHandler(this.Cadastro_Load);
             this.guna2GroupBox1.ResumeLayout(false);

@@ -35,7 +35,9 @@ namespace Projeto_Final_Leandro
 
         private void img_exit_Click(object sender, EventArgs e)
         {
+            Form1 tela = new Form1();
             Close();
+            tela.Show();
         }
     }
 }

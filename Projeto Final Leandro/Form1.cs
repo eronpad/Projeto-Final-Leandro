@@ -27,7 +27,7 @@ namespace Projeto_Final_Leandro
 
         private void img_exit_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void btn_cadastro_Click(object sender, EventArgs e)
