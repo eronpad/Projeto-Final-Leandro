@@ -90,5 +90,17 @@
   <ItemGroup>
     <None Include="img\edit_mode.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Desenho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\X.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\X.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
