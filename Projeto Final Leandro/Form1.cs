@@ -32,9 +32,19 @@ namespace Projeto_Final_Leandro
 
         private void btn_cadastro_Click(object sender, EventArgs e)
         {
-            Form2 novoForm = new Form2();
-            novoForm.Show();
-            Hide();
+
+            string email = txt_gmail.Text;
+            string senha = txt_password.Text;
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha))
+            {
+                MessageBox.Show("O email ou sua senha esta incorreto, favor verificar e tentar novamete");
+            }
+            else
+            {
+                Form2 novoForm = new Form2();
+                novoForm.Show();
+                Hide();
+            }
         }
     }
-}
+  }
