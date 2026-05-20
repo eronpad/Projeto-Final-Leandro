@@ -28,20 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lbl_commit = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lbl_commit
+            // 
+            this.lbl_commit.AutoSize = true;
+            this.lbl_commit.Location = new System.Drawing.Point(536, 296);
+            this.lbl_commit.Name = "lbl_commit";
+            this.lbl_commit.Size = new System.Drawing.Size(129, 16);
+            this.lbl_commit.TabIndex = 0;
+            this.lbl_commit.Text = "Label for commit test";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1232, 587);
+            this.Controls.Add(this.lbl_commit);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbl_commit;
     }
 }
 
