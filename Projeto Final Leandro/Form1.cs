@@ -29,5 +29,10 @@ namespace Projeto_Final_Leandro
         {
 
         }
+
+        private void img_exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
