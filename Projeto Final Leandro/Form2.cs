@@ -51,5 +51,10 @@ namespace Projeto_Final_Leandro
         {
             lbl_hr.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
