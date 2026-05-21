@@ -15,6 +15,8 @@ namespace Projeto_Final_Leandro
         public Form2()
         {
             InitializeComponent();
+            timer1.Start();
+            timer1.Interval = 100;
         }
 
         private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,6 +40,16 @@ namespace Projeto_Final_Leandro
             Form1 tela = new Form1();
             Close();
             tela.Show();
+        }
+
+        private void lbl_hr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hr.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }
