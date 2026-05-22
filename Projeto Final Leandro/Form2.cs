@@ -31,7 +31,7 @@ namespace Projeto_Final_Leandro
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form cadastro = new Cadastro();
+            Form cadastro = new Aluno();
             cadastro.Show();
         }
 

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Projeto_Final_Leandro
 {
-    public partial class Cadastro : Form
+    public partial class Aluno : Form
     {
-        public Cadastro()
+        public Aluno()
         {
             InitializeComponent();
         }
@@ -68,6 +68,11 @@ namespace Projeto_Final_Leandro
             btn_mas.Checked = false;
             btn_outro.Checked = false;
             lbl_imc.Text = "IMC do Aluno: ";
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
