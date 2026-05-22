@@ -40,47 +40,10 @@ namespace Projeto_Final_Leandro
             if(double.TryParse(txt_altura.Text, out altura_txt) && double.TryParse(txt_peso.Text, out peso_txt))
             {
                 imc(peso_txt, altura_txt);
+                
                 try
                 {
-                    dado_aluno novoAluno = new dado_aluno();
-                    
-                    novoAluno.Nome = txt_name.Text;
-
-                    novoAluno.Peso = Convert.ToDouble(txt_peso.Text);
-                    novoAluno.Idade = Convert.ToInt32(txt_idade.Text);
-                    novoAluno.Altura = Convert.ToDouble(txt_altura.Text);
-
-                    if (btn_fem.Checked )
-                    {
-                        novoAluno.Sexo = 'F';
-                    }
-                    else if (btn_mas.Checked )
-                    {
-                        novoAluno.Sexo = 'M';
-                    }
-
-                    if(guna2ComboBox1.SelectedItem !=  null)
-                    {
-                        novoAluno.ObjFitness = guna2ComboBox1.SelectedItem.ToString();
-                    }
-                    else
-                    {
-                        novoAluno.ObjFitness = "Não Informado";
-                    }
-
-                    listaAlunosGeral.Add(novoAluno);
-
-                    if(contadorAlunos  < vetorAlunosGeral.Length)
-                    {
-                        vetorAlunosGeral[contadorAlunos] = novoAluno;
-                        contadorAlunos++;
-
-                        MessageBox.Show("Aluno Salvo com Sucesso!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Memoria Cheia, whomp whomp");
-                    }
+                    cadastre();
                 }
                 catch { }
                 
@@ -127,6 +90,46 @@ namespace Projeto_Final_Leandro
             public double Altura { get; set; }
             public string ObjFitness { get; set; }
             public char Sexo { get; set; }
+        }
+
+        public void cadastre()
+        {
+            dado_aluno novoAluno = new dado_aluno();
+            novoAluno.Nome = txt_name.Text;
+            novoAluno.Peso = Convert.ToDouble(txt_peso.Text);
+            novoAluno.Idade = Convert.ToInt32(txt_idade.Text);
+            novoAluno.Altura = Convert.ToDouble(txt_altura.Text);
+            if (btn_fem.Checked)
+            {
+                novoAluno.Sexo = 'F';
+            }
+            else if (btn_mas.Checked)
+            {
+                novoAluno.Sexo = 'M';
+            }
+
+            if (guna2ComboBox1.SelectedItem != null)
+            {
+                novoAluno.ObjFitness = guna2ComboBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                novoAluno.ObjFitness = "Não Informado";
+            }
+
+            listaAlunosGeral.Add(novoAluno);
+
+            if (contadorAlunos < vetorAlunosGeral.Length)
+            {
+                vetorAlunosGeral[contadorAlunos] = novoAluno;
+                contadorAlunos++;
+
+                MessageBox.Show("Aluno Salvo com Sucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Memoria Cheia, whomp whomp");
+            }
         }
     }
 }
