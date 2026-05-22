@@ -93,6 +93,16 @@ namespace Projeto_Final_Leandro.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logouticon {
+            get {
+                object obj = ResourceManager.GetObject("logouticon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Neguins {
             get {
                 object obj = ResourceManager.GetObject("Neguins", resourceCulture);

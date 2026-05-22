@@ -65,6 +65,9 @@ namespace Projeto_Final_Leandro
 
         }
 
-        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

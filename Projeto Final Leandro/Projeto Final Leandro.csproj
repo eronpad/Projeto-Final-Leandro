@@ -92,6 +92,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Aluno.dado_aluno.datasource" />
+    <None Include="Properties\DataSources\Aluno.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\Neguins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logouticon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

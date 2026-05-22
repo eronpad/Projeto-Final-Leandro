@@ -25,7 +25,10 @@ namespace Projeto_Final_Leandro
 
         private void img_exit_Click(object sender, EventArgs e)
         {
+            Form2 menu = new Form2();
             Close();
+            menu.Show();
+            
         }
 
         private void Cadastro_Load(object sender, EventArgs e)
@@ -74,7 +77,6 @@ namespace Projeto_Final_Leandro
             txt_peso.Clear();
             btn_fem.Checked = false;
             btn_mas.Checked = false;
-            btn_outro.Checked = false;
             lbl_imc.Text = "IMC do Aluno: ";
         }
 
