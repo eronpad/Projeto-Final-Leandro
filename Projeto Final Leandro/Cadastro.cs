@@ -168,15 +168,37 @@ namespace Projeto_Final_Leandro
                 else
                 {
                     var primeiroAluno = resultadoFiltro.First();
+                    var situacao = lbl_classificacaoimc.Text;
                     double alturaMetros = primeiroAluno.Altura;
                     alturaMetros = alturaMetros / 100;
                     double imcCalculado = primeiroAluno.Peso / (alturaMetros * alturaMetros);
                     lbl_imc.Text = $"IMC de {primeiroAluno.Nome}: {imcCalculado:F2}";
+                    if (imcCalculado < 18.5)
+                    {
+                        lbl_classificacaoimc.Text = "Classificação do IMC: Magreza";
+                    }
+                    else if (imcCalculado < 25)
+                    {
+                        lbl_classificacaoimc.Text = "Classificação do IMC: Normal";
+                    }
+                    else if (imcCalculado < 30)
+                    {
+                        lbl_classificacaoimc.Text = "Classificação do IMC: Sobrepeso";
+                    }
+                    else
+                    {
+                        lbl_classificacaoimc.Text = "Classificação do IMC: Obesidade";
+                    }
                 }
             }
 
             
             
+        }
+
+        private void lbl_imc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
