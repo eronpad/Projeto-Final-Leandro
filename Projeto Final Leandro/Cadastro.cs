@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
 namespace Projeto_Final_Leandro
 {
@@ -132,6 +133,50 @@ namespace Projeto_Final_Leandro
             {
                 MessageBox.Show("Memoria Cheia, whomp whomp");
             }
+        }
+
+        private void btn_listar_Click(object sender, EventArgs e)
+        {
+            // dgvAlunos.DataSource = null;
+            // dgvAlunos.DataSource = listaAlunosGeral;
+        }
+
+        private void txt_busca_TextChanged(object sender, EventArgs e)
+        {
+            string termobusca = txt_busca.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(termobusca))
+            {
+                dgvAlunos.DataSource = null;
+                dgvAlunos.DataSource = listaAlunosGeral;
+
+                lbl_imc.Text = "IMC do Aluno: ";
+            }
+            else
+            {
+                var resultadoFiltro = listaAlunosGeral
+                    .Where(novoAluno => novoAluno.Nome.ToLower().Contains(termobusca))
+                    .ToList();
+
+                dgvAlunos.DataSource = null;
+                dgvAlunos.DataSource = resultadoFiltro;
+
+                if (resultadoFiltro.Count == 0)
+                {
+                    lbl_imc.Text = "IMC do Aluno: ";
+                }
+                else
+                {
+                    var primeiroAluno = resultadoFiltro.First();
+                    double alturaMetros = primeiroAluno.Altura;
+                    alturaMetros = alturaMetros / 100;
+                    double imcCalculado = primeiroAluno.Peso / (alturaMetros * alturaMetros);
+                    lbl_imc.Text = $"IMC de {primeiroAluno.Nome}: {imcCalculado:F2}";
+                }
+            }
+
+            
+            
         }
     }
 }
