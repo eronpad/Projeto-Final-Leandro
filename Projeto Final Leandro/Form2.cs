@@ -56,5 +56,15 @@ namespace Projeto_Final_Leandro
         {
             
         }
+
+        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Aluno Alunos = new Aluno();
+            Alunos.Show();
+            Hide();
+
+        }
+
+        
     }
 }
