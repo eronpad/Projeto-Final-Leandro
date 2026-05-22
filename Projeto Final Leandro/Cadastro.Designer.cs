@@ -136,7 +136,7 @@
             this.txt_name.Location = new System.Drawing.Point(503, 130);
             this.txt_name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_name.Name = "txt_name";
-            this.txt_name.PlaceholderText = "";
+            this.txt_name.PlaceholderText = "Insira o Nome do Aluno:";
             this.txt_name.SelectedText = "";
             this.txt_name.Size = new System.Drawing.Size(267, 36);
             this.txt_name.TabIndex = 0;
@@ -169,7 +169,7 @@
             this.txt_idade.Location = new System.Drawing.Point(503, 212);
             this.txt_idade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_idade.Name = "txt_idade";
-            this.txt_idade.PlaceholderText = "";
+            this.txt_idade.PlaceholderText = "Insira a Idade do Aluno:";
             this.txt_idade.SelectedText = "";
             this.txt_idade.Size = new System.Drawing.Size(267, 36);
             this.txt_idade.TabIndex = 1;
@@ -213,7 +213,7 @@
             this.txt_peso.Location = new System.Drawing.Point(780, 130);
             this.txt_peso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_peso.Name = "txt_peso";
-            this.txt_peso.PlaceholderText = "";
+            this.txt_peso.PlaceholderText = "80Kg";
             this.txt_peso.SelectedText = "";
             this.txt_peso.Size = new System.Drawing.Size(267, 36);
             this.txt_peso.TabIndex = 2;
@@ -235,7 +235,7 @@
             this.txt_altura.Location = new System.Drawing.Point(780, 212);
             this.txt_altura.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_altura.Name = "txt_altura";
-            this.txt_altura.PlaceholderText = "";
+            this.txt_altura.PlaceholderText = "180(cm)";
             this.txt_altura.SelectedText = "";
             this.txt_altura.Size = new System.Drawing.Size(267, 36);
             this.txt_altura.TabIndex = 3;

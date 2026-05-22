@@ -98,7 +98,8 @@ namespace Projeto_Final_Leandro
         }
         private void imc(double peso, double altura)
         {
-            double imc = peso / (altura * altura);
+            double alturaMetros = altura / 100;
+            double imc = peso / (alturaMetros * alturaMetros);
             lbl_imc.Text = $"IMC do Aluno: {imc:F2}";
         }
 
