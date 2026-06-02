@@ -89,6 +89,7 @@
             this.treinosToolStripMenuItem.Name = "treinosToolStripMenuItem";
             this.treinosToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.treinosToolStripMenuItem.Text = "Treinos";
+            this.treinosToolStripMenuItem.Click += new System.EventHandler(this.treinosToolStripMenuItem_Click);
             // 
             // relatórioToolStripMenuItem
             // 

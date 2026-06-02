@@ -69,5 +69,12 @@ namespace Projeto_Final_Leandro
         {
 
         }
+
+        private void treinosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            treino Treino = new treino();
+            Treino.Show();
+            Hide();
+        }
     }
 }

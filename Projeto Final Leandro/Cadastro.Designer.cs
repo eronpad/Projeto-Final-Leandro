@@ -30,10 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TabPage tbpg_cadastro;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_limpar = new Guna.UI2.WinForms.Guna2Button();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_idade = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +44,6 @@
             this.btn_fem = new Guna.UI2.WinForms.Guna2RadioButton();
             this.btn_mas = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,8 +51,14 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tbpg_imc = new System.Windows.Forms.TabPage();
-            this.txt_busca = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_classificacaoimc = new System.Windows.Forms.Label();
             this.dgvAlunos = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.lbl_imc = new System.Windows.Forms.Label();
+            this.txt_busca = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_nmcadastro = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,17 +67,16 @@
             this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dadoalunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lbl_classificacaoimc = new System.Windows.Forms.Label();
-            this.lbl_nmcadastro = new System.Windows.Forms.Label();
-            this.lbl_imc = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             tbpg_cadastro = new System.Windows.Forms.TabPage();
             tbpg_cadastro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tbpg_imc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadoalunoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -99,22 +102,11 @@
             tbpg_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tbpg_cadastro.Location = new System.Drawing.Point(184, 4);
             tbpg_cadastro.Name = "tbpg_cadastro";
-            tbpg_cadastro.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            tbpg_cadastro.Padding = new System.Windows.Forms.Padding(3);
             tbpg_cadastro.Size = new System.Drawing.Size(846, 494);
             tbpg_cadastro.TabIndex = 0;
             tbpg_cadastro.Text = "Cadastro";
             tbpg_cadastro.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 99);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(371, 229);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 14;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // btn_limpar
             // 
@@ -326,21 +318,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Objetivo Fitness:";
             // 
-            // img_exit
-            // 
-            this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
-            this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
-            this.img_exit.ImageRotate = 0F;
-            this.img_exit.ImageSize = new System.Drawing.Size(32, 32);
-            this.img_exit.Location = new System.Drawing.Point(761, 0);
-            this.img_exit.Name = "img_exit";
-            this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Size = new System.Drawing.Size(59, 59);
-            this.img_exit.TabIndex = 7;
-            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -421,59 +398,50 @@
             this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.TabIndex = 18;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.SelectedIndexChanged += new System.EventHandler(this.guna2TabControl1_SelectedIndexChanged);
             // 
             // tbpg_imc
             // 
             this.tbpg_imc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.tbpg_imc.Controls.Add(this.guna2ImageButton1);
             this.tbpg_imc.Controls.Add(this.lbl_classificacaoimc);
             this.tbpg_imc.Controls.Add(this.dgvAlunos);
             this.tbpg_imc.Controls.Add(this.lbl_imc);
             this.tbpg_imc.Controls.Add(this.txt_busca);
-            this.tbpg_imc.Controls.Add(this.guna2PictureBox3);
             this.tbpg_imc.Controls.Add(this.lbl_nmcadastro);
+            this.tbpg_imc.Controls.Add(this.guna2PictureBox3);
             this.tbpg_imc.Location = new System.Drawing.Point(184, 4);
             this.tbpg_imc.Name = "tbpg_imc";
-            this.tbpg_imc.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbpg_imc.Padding = new System.Windows.Forms.Padding(3);
             this.tbpg_imc.Size = new System.Drawing.Size(846, 494);
             this.tbpg_imc.TabIndex = 1;
             this.tbpg_imc.Text = "Cálculo de IMC";
             // 
-            // txt_busca
+            // lbl_classificacaoimc
             // 
-            this.txt_busca.BorderRadius = 10;
-            this.txt_busca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_busca.DefaultText = "";
-            this.txt_busca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_busca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_busca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_busca.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_busca.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_busca.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_busca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busca.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_busca.Location = new System.Drawing.Point(543, 28);
-            this.txt_busca.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txt_busca.Name = "txt_busca";
-            this.txt_busca.PlaceholderText = "";
-            this.txt_busca.SelectedText = "";
-            this.txt_busca.Size = new System.Drawing.Size(243, 37);
-            this.txt_busca.TabIndex = 22;
-            this.txt_busca.TextChanged += new System.EventHandler(this.txt_busca_TextChanged);
+            this.lbl_classificacaoimc.AutoSize = true;
+            this.lbl_classificacaoimc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_classificacaoimc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_classificacaoimc.Location = new System.Drawing.Point(378, 397);
+            this.lbl_classificacaoimc.Name = "lbl_classificacaoimc";
+            this.lbl_classificacaoimc.Size = new System.Drawing.Size(241, 25);
+            this.lbl_classificacaoimc.TabIndex = 20;
+            this.lbl_classificacaoimc.Text = "Classificação do IMC:";
             // 
             // dgvAlunos
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvAlunos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvAlunos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvAlunos.AutoGenerateColumns = false;
             this.dgvAlunos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvAlunos.ColumnHeadersHeight = 15;
             this.dgvAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -484,14 +452,14 @@
             this.objFitnessDataGridViewTextBoxColumn,
             this.sexoDataGridViewTextBoxColumn});
             this.dgvAlunos.DataSource = this.dadoalunoBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAlunos.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAlunos.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvAlunos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.dgvAlunos.Location = new System.Drawing.Point(383, 96);
             this.dgvAlunos.Name = "dgvAlunos";
@@ -521,6 +489,88 @@
             this.dgvAlunos.ThemeStyle.RowsStyle.Height = 22;
             this.dgvAlunos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAlunos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // lbl_imc
+            // 
+            this.lbl_imc.AutoSize = true;
+            this.lbl_imc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_imc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_imc.Location = new System.Drawing.Point(378, 365);
+            this.lbl_imc.Name = "lbl_imc";
+            this.lbl_imc.Size = new System.Drawing.Size(160, 25);
+            this.lbl_imc.TabIndex = 17;
+            this.lbl_imc.Text = "IMC do Aluno:";
+            this.lbl_imc.Click += new System.EventHandler(this.lbl_imc_Click);
+            // 
+            // txt_busca
+            // 
+            this.txt_busca.BorderRadius = 10;
+            this.txt_busca.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_busca.DefaultText = "";
+            this.txt_busca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_busca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_busca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_busca.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busca.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca.Location = new System.Drawing.Point(522, 28);
+            this.txt_busca.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_busca.Name = "txt_busca";
+            this.txt_busca.PlaceholderText = "";
+            this.txt_busca.SelectedText = "";
+            this.txt_busca.Size = new System.Drawing.Size(243, 37);
+            this.txt_busca.TabIndex = 22;
+            this.txt_busca.TextChanged += new System.EventHandler(this.txt_busca_TextChanged);
+            // 
+            // lbl_nmcadastro
+            // 
+            this.lbl_nmcadastro.AutoSize = true;
+            this.lbl_nmcadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nmcadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_nmcadastro.Location = new System.Drawing.Point(29, 28);
+            this.lbl_nmcadastro.Name = "lbl_nmcadastro";
+            this.lbl_nmcadastro.Size = new System.Drawing.Size(488, 37);
+            this.lbl_nmcadastro.TabIndex = 19;
+            this.lbl_nmcadastro.Text = "Selecione o Aluno Cadastrado:";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.tabPage3.Controls.Add(this.guna2ImageButton2);
+            this.tabPage3.Location = new System.Drawing.Point(184, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(846, 494);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Excluir Aluno";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 99);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(371, 229);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 14;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // img_exit
+            // 
+            this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
+            this.img_exit.ImageRotate = 0F;
+            this.img_exit.ImageSize = new System.Drawing.Size(32, 32);
+            this.img_exit.Location = new System.Drawing.Point(776, 6);
+            this.img_exit.Name = "img_exit";
+            this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.Size = new System.Drawing.Size(59, 59);
+            this.img_exit.TabIndex = 7;
+            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -585,49 +635,35 @@
             this.guna2PictureBox3.TabIndex = 19;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // lbl_classificacaoimc
+            // guna2ImageButton1
             // 
-            this.lbl_classificacaoimc.AutoSize = true;
-            this.lbl_classificacaoimc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_classificacaoimc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_classificacaoimc.Location = new System.Drawing.Point(378, 397);
-            this.lbl_classificacaoimc.Name = "lbl_classificacaoimc";
-            this.lbl_classificacaoimc.Size = new System.Drawing.Size(241, 25);
-            this.lbl_classificacaoimc.TabIndex = 20;
-            this.lbl_classificacaoimc.Text = "Classificação do IMC:";
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(781, 6);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(59, 59);
+            this.guna2ImageButton1.TabIndex = 23;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // lbl_nmcadastro
+            // guna2ImageButton2
             // 
-            this.lbl_nmcadastro.AutoSize = true;
-            this.lbl_nmcadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nmcadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_nmcadastro.Location = new System.Drawing.Point(50, 28);
-            this.lbl_nmcadastro.Name = "lbl_nmcadastro";
-            this.lbl_nmcadastro.Size = new System.Drawing.Size(488, 37);
-            this.lbl_nmcadastro.TabIndex = 19;
-            this.lbl_nmcadastro.Text = "Selecione o Aluno Cadastrado:";
-            // 
-            // lbl_imc
-            // 
-            this.lbl_imc.AutoSize = true;
-            this.lbl_imc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_imc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_imc.Location = new System.Drawing.Point(378, 365);
-            this.lbl_imc.Name = "lbl_imc";
-            this.lbl_imc.Size = new System.Drawing.Size(160, 25);
-            this.lbl_imc.TabIndex = 17;
-            this.lbl_imc.Text = "IMC do Aluno:";
-            this.lbl_imc.Click += new System.EventHandler(this.lbl_imc_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            this.tabPage3.Location = new System.Drawing.Point(184, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(846, 494);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(776, 6);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(59, 59);
+            this.guna2ImageButton2.TabIndex = 8;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // Aluno
             // 
@@ -643,13 +679,14 @@
             this.Load += new System.EventHandler(this.Cadastro_Load);
             tbpg_cadastro.ResumeLayout(false);
             tbpg_cadastro.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.guna2TabControl1.ResumeLayout(false);
             this.tbpg_imc.ResumeLayout(false);
             this.tbpg_imc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadoalunoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -692,5 +729,7 @@
         private System.Windows.Forms.BindingSource dadoalunoBindingSource;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox txt_busca;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
     }
 }

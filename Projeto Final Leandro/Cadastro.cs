@@ -200,5 +200,24 @@ namespace Projeto_Final_Leandro
         {
 
         }
+
+        private void guna2TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Form2 menu = new Form2();
+            Close();
+            menu.Show();
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            Form2 menu = new Form2();
+            Close();
+            menu.Show();
+        }
     }
 }
