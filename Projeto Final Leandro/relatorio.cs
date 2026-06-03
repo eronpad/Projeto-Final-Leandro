@@ -23,5 +23,11 @@ namespace Projeto_Final_Leandro
             Close();
             menu.Show();
         }
+
+        private void lst_ranking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }

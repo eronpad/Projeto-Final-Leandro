@@ -36,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lbl_hr = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_limpar = new Guna.UI2.WinForms.Guna2Button();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
@@ -82,8 +83,11 @@
             this.txt_busca2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.lbl_hr = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lst_ranking = new System.Windows.Forms.ListBox();
+            this.lbl_crono = new System.Windows.Forms.Label();
             tbpg_cadastro = new System.Windows.Forms.TabPage();
             tbpg_cadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -95,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgAluno2)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbpg_cadastro
@@ -124,6 +129,17 @@
             tbpg_cadastro.TabIndex = 0;
             tbpg_cadastro.Text = "Cadastro";
             tbpg_cadastro.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // lbl_hr
+            // 
+            this.lbl_hr.AutoSize = true;
+            this.lbl_hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_hr.Location = new System.Drawing.Point(6, 6);
+            this.lbl_hr.Name = "lbl_hr";
+            this.lbl_hr.Size = new System.Drawing.Size(92, 25);
+            this.lbl_hr.TabIndex = 18;
+            this.lbl_hr.Text = "Relógio";
             // 
             // guna2PictureBox1
             // 
@@ -419,6 +435,7 @@
             this.guna2TabControl1.Controls.Add(tbpg_cadastro);
             this.guna2TabControl1.Controls.Add(this.tbpg_imc);
             this.guna2TabControl1.Controls.Add(this.tabPage3);
+            this.guna2TabControl1.Controls.Add(this.tabPage1);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(-4, 2);
             this.guna2TabControl1.Name = "guna2TabControl1";
@@ -848,21 +865,56 @@
             this.guna2ImageButton2.TabIndex = 8;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
-            // lbl_hr
-            // 
-            this.lbl_hr.AutoSize = true;
-            this.lbl_hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_hr.Location = new System.Drawing.Point(6, 6);
-            this.lbl_hr.Name = "lbl_hr";
-            this.lbl_hr.Size = new System.Drawing.Size(92, 25);
-            this.lbl_hr.TabIndex = 18;
-            this.lbl_hr.Text = "Relógio";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.lst_ranking);
+            this.tabPage1.Controls.Add(this.lbl_crono);
+            this.tabPage1.Location = new System.Drawing.Point(184, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(846, 494);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Ranking";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.label7.Location = new System.Drawing.Point(325, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 20);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Maiores IMC";
+            // 
+            // lst_ranking
+            // 
+            this.lst_ranking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_ranking.FormattingEnabled = true;
+            this.lst_ranking.ItemHeight = 25;
+            this.lst_ranking.Location = new System.Drawing.Point(211, 91);
+            this.lst_ranking.Name = "lst_ranking";
+            this.lst_ranking.Size = new System.Drawing.Size(405, 204);
+            this.lst_ranking.TabIndex = 28;
+            this.lst_ranking.SelectedIndexChanged += new System.EventHandler(this.lst_ranking_SelectedIndexChanged);
+            // 
+            // lbl_crono
+            // 
+            this.lbl_crono.AutoSize = true;
+            this.lbl_crono.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_crono.Location = new System.Drawing.Point(226, 7);
+            this.lbl_crono.Name = "lbl_crono";
+            this.lbl_crono.Size = new System.Drawing.Size(370, 42);
+            this.lbl_crono.TabIndex = 27;
+            this.lbl_crono.Text = "Ranking dos Alunos";
             // 
             // Aluno
             // 
@@ -890,6 +942,8 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgAluno2)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -944,5 +998,9 @@
         private Guna.UI2.WinForms.Guna2Button btn_excluir;
         private System.Windows.Forms.Label lbl_hr;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox lst_ranking;
+        private System.Windows.Forms.Label lbl_crono;
     }
 }

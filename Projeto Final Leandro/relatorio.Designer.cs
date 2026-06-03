@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.lbl_crono = new System.Windows.Forms.Label();
-            this.lst_ranking = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
@@ -43,38 +40,6 @@
             this.guna2BorderlessForm1.DockIndicatorColor = System.Drawing.SystemColors.Window;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // lbl_crono
-            // 
-            this.lbl_crono.AutoSize = true;
-            this.lbl_crono.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_crono.Location = new System.Drawing.Point(214, 9);
-            this.lbl_crono.Name = "lbl_crono";
-            this.lbl_crono.Size = new System.Drawing.Size(370, 42);
-            this.lbl_crono.TabIndex = 24;
-            this.lbl_crono.Text = "Ranking dos Alunos";
-            // 
-            // lst_ranking
-            // 
-            this.lst_ranking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lst_ranking.FormattingEnabled = true;
-            this.lst_ranking.ItemHeight = 25;
-            this.lst_ranking.Location = new System.Drawing.Point(199, 93);
-            this.lst_ranking.Name = "lst_ranking";
-            this.lst_ranking.Size = new System.Drawing.Size(405, 204);
-            this.lst_ranking.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.label1.Location = new System.Drawing.Point(313, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 20);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Maior gasto calórico";
             // 
             // guna2ImageButton1
             // 
@@ -98,24 +63,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lst_ranking);
-            this.Controls.Add(this.lbl_crono);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "relatorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "relatorio";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lst_ranking;
-        private System.Windows.Forms.Label lbl_crono;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

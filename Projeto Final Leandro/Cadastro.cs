@@ -47,6 +47,7 @@ namespace Projeto_Final_Leandro
                 try
                 {
                     cadastre();
+                    GerarRanking();
                 }
                 catch { }
 
@@ -277,6 +278,36 @@ namespace Projeto_Final_Leandro
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbl_hr.Text = DateTime.Now.ToString("HH:mm");
+        }
+
+        private void lst_ranking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void GerarRanking()
+        {
+            lst_ranking.Items.Clear();
+
+            var ranking = listaAlunosGeral
+                .OrderByDescending(a =>
+                {
+                    double altura = a.Altura / 100;
+                    return a.Peso / (altura * altura);
+                });
+
+            int posicao = 1;
+
+            foreach (var aluno in ranking)
+            {
+                double altura = aluno.Altura / 100;
+                double imc = aluno.Peso / (altura * altura);
+
+                lst_ranking.Items.Add(
+                    $"{posicao}º - {aluno.Nome} | IMC: {imc:F2}"
+                );
+
+                posicao++;
+            }
         }
     }
     }
