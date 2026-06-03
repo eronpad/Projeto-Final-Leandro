@@ -110,7 +110,7 @@
             this.lbl_hr.AutoSize = true;
             this.lbl_hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_hr.Location = new System.Drawing.Point(705, 454);
+            this.lbl_hr.Location = new System.Drawing.Point(12, 37);
             this.lbl_hr.Name = "lbl_hr";
             this.lbl_hr.Size = new System.Drawing.Size(92, 25);
             this.lbl_hr.TabIndex = 2;
@@ -138,7 +138,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Location = new System.Drawing.Point(311, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 25);
             this.label1.TabIndex = 10;

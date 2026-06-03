@@ -46,5 +46,15 @@ namespace Projeto_Final_Leandro
                 Hide();
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hr1.Text = DateTime.Now.ToString("HH:mm");
+        }
     }
   }

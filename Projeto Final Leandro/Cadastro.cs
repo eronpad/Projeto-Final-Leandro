@@ -39,7 +39,6 @@ namespace Projeto_Final_Leandro
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-
             double altura_txt, peso_txt;
             if (double.TryParse(txt_altura.Text, out altura_txt) && double.TryParse(txt_peso.Text, out peso_txt))
             {
@@ -51,12 +50,12 @@ namespace Projeto_Final_Leandro
                 }
                 catch { }
 
+                Limpar();
             }
             else
             {
                 MessageBox.Show("Coloque um valor válido na altura e no peso!");
             }
-
         }
 
         private void txt_peso_KeyPress(object sender, KeyPressEventArgs e)
@@ -70,7 +69,7 @@ namespace Projeto_Final_Leandro
             lbl_imc.Text = $"IMC do Aluno: {imc:F2}";
         }
 
-        private void btn_limpar_Click(object sender, EventArgs e)
+        private void Limpar()
         {
             txt_altura.Clear();
             txt_idade.Clear();
@@ -79,6 +78,11 @@ namespace Projeto_Final_Leandro
             btn_fem.Checked = false;
             btn_mas.Checked = false;
             lbl_imc.Text = "IMC do Aluno: ";
+        }
+
+        private void btn_limpar_Click(object sender, EventArgs e)
+        {
+            Limpar();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -268,7 +272,12 @@ namespace Projeto_Final_Leandro
                     MessageBox.Show("Erro de tipo.");
                 }
             } 
-        } 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hr.Text = DateTime.Now.ToString("HH:mm");
+        }
     }
     }
 

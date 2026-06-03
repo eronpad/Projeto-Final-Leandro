@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lbl_hr1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,12 +147,30 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // lbl_hr1
+            // 
+            this.lbl_hr1.AutoSize = true;
+            this.lbl_hr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hr1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_hr1.Location = new System.Drawing.Point(12, 9);
+            this.lbl_hr1.Name = "lbl_hr1";
+            this.lbl_hr1.Size = new System.Drawing.Size(92, 25);
+            this.lbl_hr1.TabIndex = 20;
+            this.lbl_hr1.Text = "Relógio";
+            this.lbl_hr1.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(825, 488);
+            this.Controls.Add(this.lbl_hr1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_cadastro);
             this.Controls.Add(this.img_exit);
@@ -158,7 +178,7 @@
             this.Controls.Add(this.txt_gmail);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -178,6 +198,8 @@
         private Guna.UI2.WinForms.Guna2ImageButton img_exit;
         private Guna.UI2.WinForms.Guna2Button btn_cadastro;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_hr1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

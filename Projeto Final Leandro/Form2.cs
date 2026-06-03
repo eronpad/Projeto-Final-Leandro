@@ -49,7 +49,7 @@ namespace Projeto_Final_Leandro
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lbl_hr.Text = DateTime.Now.ToString("HH:mm:ss");
+            lbl_hr.Text = DateTime.Now.ToString("HH:mm");
         }
 
         private void label1_Click(object sender, EventArgs e)

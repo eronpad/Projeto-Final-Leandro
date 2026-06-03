@@ -30,14 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2TabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lst_exercicios = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_crono = new System.Windows.Forms.Label();
+            this.btn_timer_iniciar = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_result_timer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -47,72 +46,6 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // img_exit
-            // 
-            this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
-            this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
-            this.img_exit.ImageRotate = 0F;
-            this.img_exit.ImageSize = new System.Drawing.Size(32, 32);
-            this.img_exit.Location = new System.Drawing.Point(569, 6);
-            this.img_exit.Name = "img_exit";
-            this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Size = new System.Drawing.Size(59, 59);
-            this.img_exit.TabIndex = 8;
-            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
-            // 
-            // guna2TabControl1
-            // 
-            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
-            this.guna2TabControl1.Controls.Add(this.tabPage2);
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(1, 2);
-            this.guna2TabControl1.Name = "guna2TabControl1";
-            this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(823, 488);
-            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.TabIndex = 9;
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            this.tabPage1.Controls.Add(this.img_exit);
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(635, 480);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Cronômetro";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            this.tabPage2.Controls.Add(this.guna2ImageButton1);
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(635, 480);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Exercícios";
-            // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -121,12 +54,85 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(569, 3);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(754, 12);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Size = new System.Drawing.Size(59, 59);
             this.guna2ImageButton1.TabIndex = 10;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Lime;
+            this.guna2ComboBox1.BorderRadius = 15;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FillColor = System.Drawing.Color.Gray;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Lime;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Cardio",
+            "Peito",
+            "Costas",
+            "Pernas",
+            "Funcional"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(332, 12);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(155, 36);
+            this.guna2ComboBox1.TabIndex = 11;
+            // 
+            // lst_exercicios
+            // 
+            this.lst_exercicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_exercicios.FormattingEnabled = true;
+            this.lst_exercicios.ItemHeight = 25;
+            this.lst_exercicios.Location = new System.Drawing.Point(573, 108);
+            this.lst_exercicios.Name = "lst_exercicios";
+            this.lst_exercicios.Size = new System.Drawing.Size(206, 354);
+            this.lst_exercicios.TabIndex = 12;
+            this.lst_exercicios.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // lbl_crono
+            // 
+            this.lbl_crono.AutoSize = true;
+            this.lbl_crono.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_crono.Location = new System.Drawing.Point(12, 194);
+            this.lbl_crono.Name = "lbl_crono";
+            this.lbl_crono.Size = new System.Drawing.Size(268, 42);
+            this.lbl_crono.TabIndex = 22;
+            this.lbl_crono.Text = "Cronônometro";
+            // 
+            // btn_timer_iniciar
+            // 
+            this.btn_timer_iniciar.BorderRadius = 15;
+            this.btn_timer_iniciar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_timer_iniciar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_timer_iniciar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_timer_iniciar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_timer_iniciar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_timer_iniciar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_timer_iniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.btn_timer_iniciar.Location = new System.Drawing.Point(286, 194);
+            this.btn_timer_iniciar.Name = "btn_timer_iniciar";
+            this.btn_timer_iniciar.Size = new System.Drawing.Size(188, 45);
+            this.btn_timer_iniciar.TabIndex = 23;
+            this.btn_timer_iniciar.Text = "Iniciar";
+            // 
+            // lbl_result_timer
+            // 
+            this.lbl_result_timer.AutoSize = true;
+            this.lbl_result_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_result_timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_result_timer.Location = new System.Drawing.Point(14, 263);
+            this.lbl_result_timer.Name = "lbl_result_timer";
+            this.lbl_result_timer.Size = new System.Drawing.Size(137, 25);
+            this.lbl_result_timer.TabIndex = 24;
+            this.lbl_result_timer.Text = "Resultados:";
             // 
             // treino
             // 
@@ -134,25 +140,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(825, 488);
-            this.Controls.Add(this.guna2TabControl1);
+            this.Controls.Add(this.lbl_result_timer);
+            this.Controls.Add(this.btn_timer_iniciar);
+            this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.lst_exercicios);
+            this.Controls.Add(this.lbl_crono);
+            this.Controls.Add(this.guna2ComboBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "treino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "treino";
-            this.guna2TabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2ImageButton img_exit;
-        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private System.Windows.Forms.ListBox lst_exercicios;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_crono;
+        private Guna.UI2.WinForms.Guna2Button btn_timer_iniciar;
+        private System.Windows.Forms.Label lbl_result_timer;
     }
 }
