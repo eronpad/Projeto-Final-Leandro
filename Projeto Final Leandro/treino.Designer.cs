@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_exer = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lst_exercicios = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbl_crono = new System.Windows.Forms.Label();
@@ -61,47 +61,54 @@
             this.guna2ImageButton1.TabIndex = 10;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // guna2ComboBox1
+            // cb_exer
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Lime;
-            this.guna2ComboBox1.BorderRadius = 15;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.Gray;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Lime;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.cb_exer.AutoRoundedCorners = true;
+            this.cb_exer.BackColor = System.Drawing.Color.Transparent;
+            this.cb_exer.BorderColor = System.Drawing.Color.Lime;
+            this.cb_exer.BorderRadius = 17;
+            this.cb_exer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_exer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_exer.FillColor = System.Drawing.Color.Gray;
+            this.cb_exer.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_exer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_exer.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_exer.ForeColor = System.Drawing.Color.Lime;
+            this.cb_exer.ItemHeight = 30;
+            this.cb_exer.Items.AddRange(new object[] {
             "Cardio",
             "Peito",
             "Costas",
             "Pernas",
             "Funcional"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(332, 12);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(155, 36);
-            this.guna2ComboBox1.TabIndex = 11;
+            this.cb_exer.Location = new System.Drawing.Point(332, 12);
+            this.cb_exer.Name = "cb_exer";
+            this.cb_exer.Size = new System.Drawing.Size(155, 36);
+            this.cb_exer.TabIndex = 11;
+            this.cb_exer.SelectedIndexChanged += new System.EventHandler(this.cb_exer_SelectedIndexChanged);
             // 
             // lst_exercicios
             // 
-            this.lst_exercicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_exercicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lst_exercicios.FormattingEnabled = true;
-            this.lst_exercicios.ItemHeight = 25;
+            this.lst_exercicios.ItemHeight = 16;
             this.lst_exercicios.Location = new System.Drawing.Point(573, 108);
             this.lst_exercicios.Name = "lst_exercicios";
-            this.lst_exercicios.Size = new System.Drawing.Size(206, 354);
+            this.lst_exercicios.Size = new System.Drawing.Size(206, 340);
             this.lst_exercicios.TabIndex = 12;
             this.lst_exercicios.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lbl_crono
             // 
             this.lbl_crono.AutoSize = true;
             this.lbl_crono.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_crono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_crono.Location = new System.Drawing.Point(12, 194);
+            this.lbl_crono.Location = new System.Drawing.Point(12, 80);
             this.lbl_crono.Name = "lbl_crono";
             this.lbl_crono.Size = new System.Drawing.Size(268, 42);
             this.lbl_crono.TabIndex = 22;
@@ -117,18 +124,19 @@
             this.btn_timer_iniciar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_timer_iniciar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_timer_iniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.btn_timer_iniciar.Location = new System.Drawing.Point(286, 194);
+            this.btn_timer_iniciar.Location = new System.Drawing.Point(19, 125);
             this.btn_timer_iniciar.Name = "btn_timer_iniciar";
             this.btn_timer_iniciar.Size = new System.Drawing.Size(188, 45);
             this.btn_timer_iniciar.TabIndex = 23;
             this.btn_timer_iniciar.Text = "Iniciar";
+            this.btn_timer_iniciar.Click += new System.EventHandler(this.btn_timer_iniciar_Click);
             // 
             // lbl_result_timer
             // 
             this.lbl_result_timer.AutoSize = true;
             this.lbl_result_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_result_timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_result_timer.Location = new System.Drawing.Point(14, 263);
+            this.lbl_result_timer.Location = new System.Drawing.Point(14, 219);
             this.lbl_result_timer.Name = "lbl_result_timer";
             this.lbl_result_timer.Size = new System.Drawing.Size(137, 25);
             this.lbl_result_timer.TabIndex = 24;
@@ -145,7 +153,7 @@
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.lst_exercicios);
             this.Controls.Add(this.lbl_crono);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.cb_exer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "treino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -159,7 +167,7 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_exer;
         private System.Windows.Forms.ListBox lst_exercicios;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbl_crono;
