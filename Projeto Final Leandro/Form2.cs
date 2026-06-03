@@ -76,5 +76,19 @@ namespace Projeto_Final_Leandro
             Treino.Show();
             Hide();
         }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajuda Ajuda = new ajuda();
+            Ajuda.Show();
+            Hide();
+        }
+
+        private void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            relatorio Relatorio = new relatorio();
+            Relatorio.Show();
+            Hide();
+        }
     }
 }
