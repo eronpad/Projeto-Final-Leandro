@@ -52,7 +52,7 @@ namespace Projeto_Final_Leandro
                 int teste = cb_exer.SelectedIndex;
                 double resultado = tempo * IntesiCalc(teste);
                 
-                lbl_result_timer.Text += ($"\n {tempo:F2} ---> {resultado:F2}");
+                lbl_result_timer.Text += ($"\n Tempo: {tempo:F2} ---> Calorias Gastas {resultado:F2}");
                 btn_timer_iniciar.Text = ("Reiniciar!");
             }
             else if (btn_timer_iniciar.Text == ("Reiniciar!"))
