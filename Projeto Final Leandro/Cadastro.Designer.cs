@@ -30,9 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TabPage tbpg_cadastro;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_limpar = new Guna.UI2.WinForms.Guna2Button();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_idade = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,6 +48,7 @@
             this.btn_fem = new Guna.UI2.WinForms.Guna2RadioButton();
             this.btn_mas = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,14 +56,9 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tbpg_imc = new System.Windows.Forms.TabPage();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lbl_classificacaoimc = new System.Windows.Forms.Label();
             this.dgvAlunos = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lbl_imc = new System.Windows.Forms.Label();
-            this.txt_busca = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_nmcadastro = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,19 +66,33 @@
             this.objFitnessDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dadoalunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lbl_imc = new System.Windows.Forms.Label();
+            this.txt_busca = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_nmcadastro = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_busca2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dvgAluno2 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_excluir = new Guna.UI2.WinForms.Guna2Button();
             tbpg_cadastro = new System.Windows.Forms.TabPage();
             tbpg_cadastro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tbpg_imc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadoalunoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgAluno2)).BeginInit();
             this.SuspendLayout();
             // 
             // tbpg_cadastro
@@ -107,6 +121,17 @@
             tbpg_cadastro.TabIndex = 0;
             tbpg_cadastro.Text = "Cadastro";
             tbpg_cadastro.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 99);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(371, 229);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 14;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // btn_limpar
             // 
@@ -318,6 +343,21 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Objetivo Fitness:";
             // 
+            // img_exit
+            // 
+            this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
+            this.img_exit.ImageRotate = 0F;
+            this.img_exit.ImageSize = new System.Drawing.Size(32, 32);
+            this.img_exit.Location = new System.Drawing.Point(776, 6);
+            this.img_exit.Name = "img_exit";
+            this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.img_exit.Size = new System.Drawing.Size(59, 59);
+            this.img_exit.TabIndex = 7;
+            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -417,6 +457,21 @@
             this.tbpg_imc.TabIndex = 1;
             this.tbpg_imc.Text = "Cálculo de IMC";
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(781, 6);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(59, 59);
+            this.guna2ImageButton1.TabIndex = 23;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // lbl_classificacaoimc
             // 
             this.lbl_classificacaoimc.AutoSize = true;
@@ -430,18 +485,18 @@
             // 
             // dgvAlunos
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvAlunos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.dgvAlunos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvAlunos.AutoGenerateColumns = false;
             this.dgvAlunos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvAlunos.ColumnHeadersHeight = 15;
             this.dgvAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -452,14 +507,14 @@
             this.objFitnessDataGridViewTextBoxColumn,
             this.sexoDataGridViewTextBoxColumn});
             this.dgvAlunos.DataSource = this.dadoalunoBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAlunos.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAlunos.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgvAlunos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.dgvAlunos.Location = new System.Drawing.Point(383, 96);
             this.dgvAlunos.Name = "dgvAlunos";
@@ -489,88 +544,6 @@
             this.dgvAlunos.ThemeStyle.RowsStyle.Height = 22;
             this.dgvAlunos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAlunos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // lbl_imc
-            // 
-            this.lbl_imc.AutoSize = true;
-            this.lbl_imc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_imc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_imc.Location = new System.Drawing.Point(378, 365);
-            this.lbl_imc.Name = "lbl_imc";
-            this.lbl_imc.Size = new System.Drawing.Size(160, 25);
-            this.lbl_imc.TabIndex = 17;
-            this.lbl_imc.Text = "IMC do Aluno:";
-            this.lbl_imc.Click += new System.EventHandler(this.lbl_imc_Click);
-            // 
-            // txt_busca
-            // 
-            this.txt_busca.BorderRadius = 10;
-            this.txt_busca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_busca.DefaultText = "";
-            this.txt_busca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_busca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_busca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_busca.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_busca.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_busca.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_busca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busca.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_busca.Location = new System.Drawing.Point(522, 28);
-            this.txt_busca.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txt_busca.Name = "txt_busca";
-            this.txt_busca.PlaceholderText = "";
-            this.txt_busca.SelectedText = "";
-            this.txt_busca.Size = new System.Drawing.Size(243, 37);
-            this.txt_busca.TabIndex = 22;
-            this.txt_busca.TextChanged += new System.EventHandler(this.txt_busca_TextChanged);
-            // 
-            // lbl_nmcadastro
-            // 
-            this.lbl_nmcadastro.AutoSize = true;
-            this.lbl_nmcadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nmcadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_nmcadastro.Location = new System.Drawing.Point(29, 28);
-            this.lbl_nmcadastro.Name = "lbl_nmcadastro";
-            this.lbl_nmcadastro.Size = new System.Drawing.Size(488, 37);
-            this.lbl_nmcadastro.TabIndex = 19;
-            this.lbl_nmcadastro.Text = "Selecione o Aluno Cadastrado:";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
-            this.tabPage3.Controls.Add(this.guna2ImageButton2);
-            this.tabPage3.Location = new System.Drawing.Point(184, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(846, 494);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Excluir Aluno";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 99);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(371, 229);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 14;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // img_exit
-            // 
-            this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
-            this.img_exit.ImageOffset = new System.Drawing.Point(0, 0);
-            this.img_exit.ImageRotate = 0F;
-            this.img_exit.ImageSize = new System.Drawing.Size(32, 32);
-            this.img_exit.Location = new System.Drawing.Point(776, 6);
-            this.img_exit.Name = "img_exit";
-            this.img_exit.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.img_exit.Size = new System.Drawing.Size(59, 59);
-            this.img_exit.TabIndex = 7;
-            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -624,6 +597,51 @@
             // 
             this.dadoalunoBindingSource.DataSource = typeof(Projeto_Final_Leandro.Aluno.dado_aluno);
             // 
+            // lbl_imc
+            // 
+            this.lbl_imc.AutoSize = true;
+            this.lbl_imc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_imc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_imc.Location = new System.Drawing.Point(378, 365);
+            this.lbl_imc.Name = "lbl_imc";
+            this.lbl_imc.Size = new System.Drawing.Size(160, 25);
+            this.lbl_imc.TabIndex = 17;
+            this.lbl_imc.Text = "IMC do Aluno:";
+            this.lbl_imc.Click += new System.EventHandler(this.lbl_imc_Click);
+            // 
+            // txt_busca
+            // 
+            this.txt_busca.BorderRadius = 10;
+            this.txt_busca.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_busca.DefaultText = "";
+            this.txt_busca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_busca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_busca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_busca.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busca.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca.Location = new System.Drawing.Point(522, 28);
+            this.txt_busca.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_busca.Name = "txt_busca";
+            this.txt_busca.PlaceholderText = "";
+            this.txt_busca.SelectedText = "";
+            this.txt_busca.Size = new System.Drawing.Size(243, 37);
+            this.txt_busca.TabIndex = 22;
+            this.txt_busca.TextChanged += new System.EventHandler(this.txt_busca_TextChanged);
+            // 
+            // lbl_nmcadastro
+            // 
+            this.lbl_nmcadastro.AutoSize = true;
+            this.lbl_nmcadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nmcadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_nmcadastro.Location = new System.Drawing.Point(29, 28);
+            this.lbl_nmcadastro.Name = "lbl_nmcadastro";
+            this.lbl_nmcadastro.Size = new System.Drawing.Size(488, 37);
+            this.lbl_nmcadastro.TabIndex = 19;
+            this.lbl_nmcadastro.Text = "Selecione o Aluno Cadastrado:";
+            // 
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
@@ -635,20 +653,20 @@
             this.guna2PictureBox3.TabIndex = 19;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2ImageButton1
+            // tabPage3
             // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(781, 6);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(59, 59);
-            this.guna2ImageButton1.TabIndex = 23;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.tabPage3.Controls.Add(this.btn_excluir);
+            this.tabPage3.Controls.Add(this.dvgAluno2);
+            this.tabPage3.Controls.Add(this.txt_busca2);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.guna2ImageButton2);
+            this.tabPage3.Location = new System.Drawing.Point(184, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(846, 494);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Excluir Aluno";
             // 
             // guna2ImageButton2
             // 
@@ -665,6 +683,164 @@
             this.guna2ImageButton2.TabIndex = 8;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.label6.Location = new System.Drawing.Point(16, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(488, 37);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Selecione o Aluno Cadastrado:";
+            // 
+            // txt_busca2
+            // 
+            this.txt_busca2.BorderRadius = 10;
+            this.txt_busca2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_busca2.DefaultText = "";
+            this.txt_busca2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_busca2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_busca2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_busca2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_busca2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busca2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_busca2.Location = new System.Drawing.Point(509, 28);
+            this.txt_busca2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_busca2.Name = "txt_busca2";
+            this.txt_busca2.PlaceholderText = "";
+            this.txt_busca2.SelectedText = "";
+            this.txt_busca2.Size = new System.Drawing.Size(243, 37);
+            this.txt_busca2.TabIndex = 23;
+            this.txt_busca2.TextChanged += new System.EventHandler(this.txt_busca2_TextChanged);
+            // 
+            // dvgAluno2
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dvgAluno2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dvgAluno2.AutoGenerateColumns = false;
+            this.dvgAluno2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgAluno2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dvgAluno2.ColumnHeadersHeight = 15;
+            this.dvgAluno2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dvgAluno2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.dvgAluno2.DataSource = this.dadoalunoBindingSource;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgAluno2.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dvgAluno2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.dvgAluno2.Location = new System.Drawing.Point(23, 80);
+            this.dvgAluno2.Name = "dvgAluno2";
+            this.dvgAluno2.ReadOnly = true;
+            this.dvgAluno2.RowHeadersVisible = false;
+            this.dvgAluno2.RowHeadersWidth = 51;
+            this.dvgAluno2.Size = new System.Drawing.Size(396, 231);
+            this.dvgAluno2.TabIndex = 24;
+            this.dvgAluno2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dvgAluno2.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dvgAluno2.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dvgAluno2.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dvgAluno2.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dvgAluno2.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.dvgAluno2.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.dvgAluno2.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dvgAluno2.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dvgAluno2.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dvgAluno2.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dvgAluno2.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dvgAluno2.ThemeStyle.HeaderStyle.Height = 15;
+            this.dvgAluno2.ThemeStyle.ReadOnly = true;
+            this.dvgAluno2.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dvgAluno2.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dvgAluno2.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dvgAluno2.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dvgAluno2.ThemeStyle.RowsStyle.Height = 22;
+            this.dvgAluno2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dvgAluno2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Peso";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Peso";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Idade";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Idade";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Altura";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Altura";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ObjFitness";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ObjFitness";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Sexo";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Sexo";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // btn_excluir
+            // 
+            this.btn_excluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_excluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_excluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_excluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_excluir.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_excluir.ForeColor = System.Drawing.Color.White;
+            this.btn_excluir.Location = new System.Drawing.Point(509, 80);
+            this.btn_excluir.Name = "btn_excluir";
+            this.btn_excluir.Size = new System.Drawing.Size(180, 45);
+            this.btn_excluir.TabIndex = 25;
+            this.btn_excluir.Text = "guna2Button1";
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
+            // 
             // Aluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -679,16 +855,18 @@
             this.Load += new System.EventHandler(this.Cadastro_Load);
             tbpg_cadastro.ResumeLayout(false);
             tbpg_cadastro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.guna2TabControl1.ResumeLayout(false);
             this.tbpg_imc.ResumeLayout(false);
             this.tbpg_imc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadoalunoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgAluno2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -731,5 +909,15 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_busca;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2TextBox txt_busca2;
+        private Guna.UI2.WinForms.Guna2DataGridView dvgAluno2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private Guna.UI2.WinForms.Guna2Button btn_excluir;
     }
 }

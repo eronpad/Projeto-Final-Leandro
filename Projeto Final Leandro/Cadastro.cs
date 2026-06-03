@@ -29,7 +29,7 @@ namespace Projeto_Final_Leandro
             Form2 menu = new Form2();
             Close();
             menu.Show();
-            
+
         }
 
         private void Cadastro_Load(object sender, EventArgs e)
@@ -39,24 +39,24 @@ namespace Projeto_Final_Leandro
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            
+
             double altura_txt, peso_txt;
-            if(double.TryParse(txt_altura.Text, out altura_txt) && double.TryParse(txt_peso.Text, out peso_txt))
+            if (double.TryParse(txt_altura.Text, out altura_txt) && double.TryParse(txt_peso.Text, out peso_txt))
             {
                 imc(peso_txt, altura_txt);
-                
+
                 try
                 {
                     cadastre();
                 }
                 catch { }
-                
+
             }
             else
             {
                 MessageBox.Show("Coloque um valor válido na altura e no peso!");
             }
-            
+
         }
 
         private void txt_peso_KeyPress(object sender, KeyPressEventArgs e)
@@ -151,6 +151,7 @@ namespace Projeto_Final_Leandro
                 dgvAlunos.DataSource = listaAlunosGeral;
 
                 lbl_imc.Text = "IMC do Aluno: ";
+                lbl_classificacaoimc.Text = "Classificação do IMC: ";
             }
             else
             {
@@ -192,8 +193,8 @@ namespace Projeto_Final_Leandro
                 }
             }
 
-            
-            
+
+
         }
 
         private void lbl_imc_Click(object sender, EventArgs e)
@@ -219,5 +220,55 @@ namespace Projeto_Final_Leandro
             Close();
             menu.Show();
         }
+
+        private void txt_busca2_TextChanged(object sender, EventArgs e)
+        {
+            string termobusca = txt_busca2.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(termobusca))
+            {
+                dvgAluno2.DataSource = null;
+                dvgAluno2.DataSource = listaAlunosGeral;
+            }
+            else
+            {
+                var resultadoFiltro = listaAlunosGeral
+                    .Where(novoAluno => novoAluno.Nome.ToLower().Contains(termobusca))
+                    .ToList();
+
+                dvgAluno2.DataSource = null;
+                dvgAluno2.DataSource = resultadoFiltro;
+            }
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            
+            if (dvgAluno2.CurrentRow != null && !dvgAluno2.CurrentRow.IsNewRow)
+            {
+                try
+                {
+                    if (txt_busca2 != null)
+                    {
+                        dado_aluno objetoAluno = (dado_aluno)dvgAluno2.CurrentRow.DataBoundItem;
+                        if (MessageBox.Show($"Deseja excluir {objetoAluno.Nome}?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            listaAlunosGeral.Remove(objetoAluno);
+                            txt_busca2_TextChanged(sender, e);
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insira o Nome do Aluno para prosseguir com a Exclusão!");
+                    }
+                } 
+                catch (InvalidCastException)
+                {
+                    MessageBox.Show("Erro de tipo.");
+                }
+            } 
+        } 
     }
-}
+    }
+
