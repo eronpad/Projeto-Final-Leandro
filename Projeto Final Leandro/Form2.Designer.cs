@@ -33,16 +33,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treinosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_hr = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -58,7 +57,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alunosToolStripMenuItem,
             this.treinosToolStripMenuItem,
-            this.relatórioToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -82,14 +80,6 @@
             this.treinosToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.treinosToolStripMenuItem.Text = "Treinos";
             this.treinosToolStripMenuItem.Click += new System.EventHandler(this.treinosToolStripMenuItem_Click);
-            // 
-            // relatórioToolStripMenuItem
-            // 
-            this.relatórioToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
-            this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
-            this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.relatórioToolStripMenuItem.Text = "Relatório";
-            this.relatórioToolStripMenuItem.Click += new System.EventHandler(this.relatórioToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -120,7 +110,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(238, 42);
+            this.label1.Location = new System.Drawing.Point(233, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(358, 39);
             this.label1.TabIndex = 10;
@@ -142,27 +132,27 @@
             this.img_exit.TabIndex = 7;
             this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(185, 99);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(460, 313);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 27;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(251, 415);
+            this.label3.Location = new System.Drawing.Point(245, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(335, 39);
             this.label3.TabIndex = 28;
             this.label3.Text = "Navegue pelo menu!";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Projeto_Final_Leandro.Properties.Resources.Logo;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(217, 135);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(384, 220);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 29;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // Form2
             // 
@@ -170,8 +160,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(825, 488);
+            this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.img_exit);
             this.Controls.Add(this.lbl_hr);
@@ -182,7 +172,7 @@
             this.Text = "Form2";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,9 +188,8 @@
         private Guna.UI2.WinForms.Guna2ImageButton img_exit;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

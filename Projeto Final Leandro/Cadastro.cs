@@ -309,6 +309,13 @@ namespace Projeto_Final_Leandro
                 posicao++;
             }
         }
+
+        private void guna2ImageButton3_Click(object sender, EventArgs e)
+        {
+            Form2 menu = new Form2();
+            Close();
+            menu.Show();
+        }
     }
     }
 

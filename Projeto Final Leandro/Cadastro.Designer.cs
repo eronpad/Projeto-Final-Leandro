@@ -83,11 +83,12 @@
             this.txt_busca2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.lst_ranking = new System.Windows.Forms.ListBox();
             this.lbl_crono = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             tbpg_cadastro = new System.Windows.Forms.TabPage();
             tbpg_cadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -865,14 +866,10 @@
             this.guna2ImageButton2.TabIndex = 8;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(40)))));
+            this.tabPage1.Controls.Add(this.guna2ImageButton3);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.lst_ranking);
             this.tabPage1.Controls.Add(this.lbl_crono);
@@ -888,7 +885,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.label7.Location = new System.Drawing.Point(325, 49);
+            this.label7.Location = new System.Drawing.Point(353, 49);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 20);
             this.label7.TabIndex = 29;
@@ -899,7 +896,7 @@
             this.lst_ranking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lst_ranking.FormattingEnabled = true;
             this.lst_ranking.ItemHeight = 25;
-            this.lst_ranking.Location = new System.Drawing.Point(211, 91);
+            this.lst_ranking.Location = new System.Drawing.Point(209, 100);
             this.lst_ranking.Name = "lst_ranking";
             this.lst_ranking.Size = new System.Drawing.Size(405, 204);
             this.lst_ranking.TabIndex = 28;
@@ -910,11 +907,31 @@
             this.lbl_crono.AutoSize = true;
             this.lbl_crono.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_crono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_crono.Location = new System.Drawing.Point(226, 7);
+            this.lbl_crono.Location = new System.Drawing.Point(225, 7);
             this.lbl_crono.Name = "lbl_crono";
             this.lbl_crono.Size = new System.Drawing.Size(370, 42);
             this.lbl_crono.TabIndex = 27;
             this.lbl_crono.Text = "Ranking dos Alunos";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.Image = global::Projeto_Final_Leandro.Properties.Resources.logouticon;
+            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(776, 7);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(59, 59);
+            this.guna2ImageButton3.TabIndex = 30;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // Aluno
             // 
@@ -1002,5 +1019,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox lst_ranking;
         private System.Windows.Forms.Label lbl_crono;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
     }
 }

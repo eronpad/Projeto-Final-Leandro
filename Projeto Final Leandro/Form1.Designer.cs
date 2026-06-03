@@ -34,10 +34,10 @@
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_cadastro = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_hr1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.img_exit = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +121,23 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Fechar Programa";
             // 
+            // lbl_hr1
+            // 
+            this.lbl_hr1.AutoSize = true;
+            this.lbl_hr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hr1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
+            this.lbl_hr1.Location = new System.Drawing.Point(12, 9);
+            this.lbl_hr1.Name = "lbl_hr1";
+            this.lbl_hr1.Size = new System.Drawing.Size(92, 25);
+            this.lbl_hr1.TabIndex = 20;
+            this.lbl_hr1.Text = "Relógio";
+            this.lbl_hr1.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // img_exit
             // 
             this.img_exit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -146,23 +163,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // lbl_hr1
-            // 
-            this.lbl_hr1.AutoSize = true;
-            this.lbl_hr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hr1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(242)))), ((int)(((byte)(5)))));
-            this.lbl_hr1.Location = new System.Drawing.Point(12, 9);
-            this.lbl_hr1.Name = "lbl_hr1";
-            this.lbl_hr1.Size = new System.Drawing.Size(92, 25);
-            this.lbl_hr1.TabIndex = 20;
-            this.lbl_hr1.Text = "Relógio";
-            this.lbl_hr1.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
